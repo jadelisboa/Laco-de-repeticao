@@ -1,0 +1,37 @@
+Algoritmo "PARA / ACUMULADORES"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis 
+SEXO: CARACTERE
+IDADE: INTEIRO
+NOME: CARACTERE
+SIDADEM: INTEIRO
+SIDADEH: INTEIRO
+X: INTEIRO
+F: CARACTERE
+M: CARACTERE
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+PARA X DE 1 ATÉ 6 FAÇA
+   ESCREVAL("QUAL SEU NOME?")
+   LEIA(NOME)
+   ESCREVAL("QUAL SUA IDADE?")
+   LEIA(IDADE)
+   ESCREVAL("QUAL SEU SEXO?")
+   LEIA(SEXO)
+
+   SE (SEXO = "F") ENTAO
+      SIDADEM <- SIDADEM + IDADE
+     
+     SENAO
+       SIDADEH <- SIDADEH + IDADE
+   FIMSE
+FIMPARA
+
+   ESCREVAL("A SIDADEM É:" , SIDADEM, "E A SIDADEH É:" , SIDADEH)
+
+Fimalgoritmo
