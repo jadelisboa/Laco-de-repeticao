@@ -1,0 +1,22 @@
+Algoritmo "impar e par"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis
+x: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+PARA x de 1 ate 40 FACA
+
+     SE(x % 4 = 0) ENTAO
+     ESCREVAL (" Pim ")
+       SENAO
+       ESCREVA(x)
+     FIMSE
+FIMPARA
+FIMALGORITMO
+   
