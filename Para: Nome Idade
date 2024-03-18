@@ -1,0 +1,22 @@
+Algoritmo "PARA"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis 
+X: INTEIRO
+NOME: CARACTERE
+IDADE: INTEIRO
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  PARA X DE 1 ATE 5 FAÇA
+   ESCREVAL("QUAL SEU NOME")
+   LEIA(NOME)
+   ESCREVAL("QUAL SUA IDADE")
+   LEIA(IDADE)
+   ESCREVAL("SEU NOME É: ", NOME, " E SUA IDADE É:" , IDADE)
+  FIMPARA
+Fimalgoritmo
