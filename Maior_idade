@@ -12,37 +12,48 @@ somaH: inteiro
 somaM: inteiro
 M_i: inteiro
 qtd: inteiro
-F: caractere
-M: caractere
-
+StotalM: inteiro
+StotalH: inteiro
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
   idade <- 0
   M_i <- 0
   
   ENQUANTO idade < 999 FACA
-    ESCREVAL("DIGITE SEU SEXO")
-    LEIA(sexo)
-
     ESCREVAL("DIGITE SUA IDADE")
     LEIA(idade)
 
-    SE (SEXO = "F") ENTAO
-      somaM <- somaM + idade
-
-    SENAO
-       somaH <- somaH + idade
-    FIMSE
-    
     SE (idade <> 999) entao
       qtd <- qtd + 1
-    FIMSE
+      
+      ESCREVAL("DIGITE SEU SEXO")
+      LEIA(sexo)
 
-    SE(idade > M_i) ENTAO
-    M_i <- idade
+      SE (SEXO = "F") ENTAO
+         somaM <- somaM + 1
+         StotalM <- StotalM + idade
 
+      SENAO
+          somaH <- somaH + 1
+          StotalH <- StotalH + idade
+
+      FIMSE
+
+      
+      SE(idade > M_i) ENTAO
+         M_i <- idade
+      FIMSE
     FIMSE
     
   FIMENQUANTO
+  
+  ESCREVAL("Numero de perguntas :" )
+  
+  ESCREVAL("StotalH: ", StotalH)
+  ESCREVAL("StotalM: ", StotalM)
+  ESCREVAL("H QUANTIDADE: ", SomaM)
+  ESCREVAL("M QUANTIDADE: ", SomaH)
+  ESCREVAL("A MAIOR DAS IDADES É: ", M_i)
 
 FIMALGORITMO
+   
