@@ -1,0 +1,48 @@
+Algoritmo "M_i"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis
+idade: inteiro
+sexo: caractere
+somaH: inteiro
+somaM: inteiro
+M_i: inteiro
+qtd: inteiro
+F: caractere
+M: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  idade <- 0
+  M_i <- 0
+  
+  ENQUANTO idade < 999 FACA
+    ESCREVAL("DIGITE SEU SEXO")
+    LEIA(sexo)
+
+    ESCREVAL("DIGITE SUA IDADE")
+    LEIA(idade)
+
+    SE (SEXO = "F") ENTAO
+      somaM <- somaM + idade
+
+    SENAO
+       somaH <- somaH + idade
+    FIMSE
+    
+    SE (idade <> 999) entao
+      qtd <- qtd + 1
+    FIMSE
+
+    SE(idade > M_i) ENTAO
+    M_i <- idade
+
+    FIMSE
+    
+  FIMENQUANTO
+
+FIMALGORITMO
